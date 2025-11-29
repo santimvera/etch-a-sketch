@@ -1,4 +1,14 @@
-.container {}
+#container {
+    display: flex;
+}
+
+.square {
+    height: 4mm;
+    width: 4mm;
+    border-style: double;
+    background-color: blue;
+}
+
 
 h1,
 h2,
