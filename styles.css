@@ -1,14 +1,13 @@
-#container {
+.row {
     display: flex;
 }
 
 .square {
-    height: 4mm;
-    width: 4mm;
+    width: 10mm;
+    height: 10mm;
     border-style: double;
     background-color: blue;
 }
-
 
 h1,
 h2,
