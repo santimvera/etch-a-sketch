@@ -1,4 +1,5 @@
 const container = document.getElementById('container');
+document.getElementById("newSizeButton").onclick = changeGridSize;
 let gridSize = 16;
 
 function initializeSketch() {
@@ -16,5 +17,26 @@ function initializeSketch() {
         container.appendChild(aRow);
     }
 }
+
+function clearSketch() {
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+};
+
+function changeGridSize(callback) {
+    let size = prompt('Enter new size', "5");
+
+    if (size != null) {
+        gridSize = parseInt(size, 10);
+        clearSketch();
+        initializeSketch();
+    }
+
+
+
+};
+
+
 
 initializeSketch(); // This runs as soon as the script loads

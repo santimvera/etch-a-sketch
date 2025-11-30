@@ -1,16 +1,22 @@
+#container {
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
 .row {
     display: flex;
+    flex: 1 1 auto;
 }
 
 .square {
-    width: 10mm;
-    height: 10mm;
     border-style: double;
     background-color: blue;
+    flex: 1 1 auto;
 }
 
 .square.hovered {
-
     background-color: red;
 }
 
